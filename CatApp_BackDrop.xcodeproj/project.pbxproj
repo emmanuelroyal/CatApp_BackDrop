@@ -123,20 +123,11 @@
 		18ABD3DD269A26740029C271 /* CatApp_BackDrop */ = {
 			isa = PBXGroup;
 			children = (
-				18ABD3DE269A26740029C271 /* AppDelegate.swift */,
-				18ABD418269A4B1E0029C271 /* ViewModel.swift */,
-				18ABD3E0269A26740029C271 /* SceneDelegate.swift */,
-				18ABD3E2269A26740029C271 /* ViewController.swift */,
-				18ABD416269A47900029C271 /* TableViewCell.swift */,
-				18ABD3E4269A26740029C271 /* Main.storyboard */,
-				18ABD420269A56CA0029C271 /* catModel.swift */,
-				18ABD434269DAFB90029C271 /* RealmService.swift */,
-				18ABD427269CC80C0029C271 /* Model.swift */,
-				18ABD42D269D8D870029C271 /* CollectionViewCell.swift */,
-				18ABD410269A31980029C271 /* LikedViewController.swift */,
-				18ABD436269EEF9C0029C271 /* CollectionViewModel.swift */,
-				18ABD3E7269A26770029C271 /* Assets.xcassets */,
-				18ABD3E9269A26770029C271 /* LaunchScreen.storyboard */,
+				18D318BF269F841C008080DE /* PersistenceService */,
+				18D318BE269F83D3008080DE /* ViewModels */,
+				18D318BD269F83C8008080DE /* Views */,
+				18D318BC269F83BC008080DE /* Models */,
+				18D318C0269F8437008080DE /* Resources */,
 				18ABD3EC269A26770029C271 /* Info.plist */,
 			);
 			path = CatApp_BackDrop;
@@ -158,6 +149,55 @@
 				18ABD402269A26770029C271 /* Info.plist */,
 			);
 			path = CatApp_BackDropUITests;
+			sourceTree = "<group>";
+		};
+		18D318BC269F83BC008080DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18ABD420269A56CA0029C271 /* catModel.swift */,
+				18ABD427269CC80C0029C271 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18D318BD269F83C8008080DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18ABD3E4269A26740029C271 /* Main.storyboard */,
+				18ABD42D269D8D870029C271 /* CollectionViewCell.swift */,
+				18ABD410269A31980029C271 /* LikedViewController.swift */,
+				18ABD416269A47900029C271 /* TableViewCell.swift */,
+				18ABD3E2269A26740029C271 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18D318BE269F83D3008080DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				18ABD436269EEF9C0029C271 /* CollectionViewModel.swift */,
+				18ABD418269A4B1E0029C271 /* ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		18D318BF269F841C008080DE /* PersistenceService */ = {
+			isa = PBXGroup;
+			children = (
+				18ABD434269DAFB90029C271 /* RealmService.swift */,
+			);
+			path = PersistenceService;
+			sourceTree = "<group>";
+		};
+		18D318C0269F8437008080DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18ABD3E7269A26770029C271 /* Assets.xcassets */,
+				18ABD3E0269A26740029C271 /* SceneDelegate.swift */,
+				18ABD3E9269A26770029C271 /* LaunchScreen.storyboard */,
+				18ABD3DE269A26740029C271 /* AppDelegate.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
