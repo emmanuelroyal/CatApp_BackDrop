@@ -18,9 +18,4 @@ class CollectionViewModel {
         RealmService.shared.delete(selected)
         completion?()
     }
-    
-//    func getData() {
-////        self.data = realm.objects(catMod.self).map({ $0 })
-//        completion?()
-//    }
 }
