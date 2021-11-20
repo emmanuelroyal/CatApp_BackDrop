@@ -20,7 +20,8 @@ class ViewController: UIViewController {
         viewModel.getMethod()
         setupListeners()
     }
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         viewModel.get()
         setupListeners()
     }

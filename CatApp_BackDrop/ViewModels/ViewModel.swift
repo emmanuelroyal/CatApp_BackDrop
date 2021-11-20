@@ -40,6 +40,7 @@ class ViewModel {
     func get(){
         self.catData.removeAll()
         let realmData = data
+        self.itemNames.removeAll()
         for j in self.networkData {
             for i in realmData {
                 self.itemNames.append(i.name)

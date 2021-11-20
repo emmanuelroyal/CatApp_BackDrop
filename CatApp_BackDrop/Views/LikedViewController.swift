@@ -44,6 +44,7 @@ class LikedViewController: UIViewController, UICollectionViewDataSource {
 extension LikedViewController: collectionViewCellDelegate {
     func didTapRemoveBtn(with index: Int) {
         self.viewModel.delete(index: index)
+        self.catCollection.reloadData()
         viewModel.completion = {
             self.catCollection.reloadData()
             }

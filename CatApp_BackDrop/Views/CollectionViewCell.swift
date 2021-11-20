@@ -19,7 +19,7 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var like: UIButton!
     
     @IBAction func isUnliked(_ sender: Any) {
-        guard let items = catModels  else  { return }
+        guard catModels != nil  else  { return }
         delegate?.didTapRemoveBtn(with: tag)
         }
         

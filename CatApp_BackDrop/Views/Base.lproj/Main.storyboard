@@ -56,24 +56,38 @@
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </imageView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="xnS-EG-0NH">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnS-EG-0NH">
                                                             <rect key="frame" x="0.0" y="158" width="150" height="22"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="2Px-fQ-vd0">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="100.5" height="22"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBj-hv-kQb">
-                                                                    <rect key="frame" x="100.5" y="0.0" width="49.5" height="22"/>
-                                                                    <color key="tintColor" systemColor="systemRedColor"/>
-                                                                    <state key="normal" image="heart.fill" catalog="system"/>
-                                                                    <connections>
-                                                                        <action selector="isUnliked:" destination="Quo-y5-uzR" eventType="touchUpInside" id="0Qk-HA-eds"/>
-                                                                    </connections>
-                                                                </button>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5d-Mu-4Ti">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="22"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Px-fQ-vd0">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="110" height="22"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBj-hv-kQb">
+                                                                            <rect key="frame" x="110" y="0.0" width="40" height="22"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="width" constant="40" id="xr9-W9-ceH"/>
+                                                                            </constraints>
+                                                                            <color key="tintColor" systemColor="systemRedColor"/>
+                                                                            <state key="normal" image="heart.fill" catalog="system"/>
+                                                                            <connections>
+                                                                                <action selector="isUnliked:" destination="Quo-y5-uzR" eventType="touchUpInside" id="0Qk-HA-eds"/>
+                                                                            </connections>
+                                                                        </button>
+                                                                    </subviews>
+                                                                </stackView>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="p5d-Mu-4Ti" firstAttribute="top" secondItem="xnS-EG-0NH" secondAttribute="top" id="Zlw-sO-bg9"/>
+                                                                <constraint firstItem="p5d-Mu-4Ti" firstAttribute="leading" secondItem="xnS-EG-0NH" secondAttribute="leading" id="arw-bo-UdX"/>
+                                                                <constraint firstAttribute="bottom" secondItem="p5d-Mu-4Ti" secondAttribute="bottom" id="mrD-O9-kUb"/>
+                                                                <constraint firstAttribute="trailing" secondItem="p5d-Mu-4Ti" secondAttribute="trailing" id="wJJ-mF-7GM"/>
+                                                            </constraints>
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
